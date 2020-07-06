@@ -1,0 +1,20 @@
+
+{% load static %}
+<h1>새 글 작성하기</h1>
+<image src = "{% static '20170113_115520.jpg'%}" alt="">
+
+</image>
+<form method = 'POST' enctype="multipart/form-data">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}} 
+    </table>
+ 
+    <input class = "bin btn - dar" type = "submit" value = "저장">
+
+</form>
+<style>
+    h1{
+        font-family: fantasy;
+    }
+</style>

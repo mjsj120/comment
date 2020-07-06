@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail page</title>
+    <style class="cp-pen-styles">
+
+        .body{
+            margin:40px;
+            background-image:url('https://ac-illust.com/ko/clip-art/1052102/%EB%85%B8%ED%8A%B8-%EC%8A%A4%EC%BC%80%EC%B9%98%EB%B6%81-%EB%B2%A0%EC%9D%B4%EC%A7%80');
+            font: 15px/150% Georgia, "Times New Roman", Times, serif; }
+        
+    
+            
+        
+
+
+        .btn-circle {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 6px 0;
+        font-size: 12px;
+        line-height: 1.428571429;
+        border-radius: 15px;
+        }
+        .btn-circle.btn-lg {
+        width: 50px;
+        height: 50px;
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.33;
+        border-radius: 25px;
+        }
+        @-webkit-keyframes flipInX {
+  0% { -webkit-transform: perspective(400px) rotateX(90deg); }
+
+  30% { -webkit-transform: perspective(400px) rotateX(-10deg); }
+
+  70% { -webkit-transform: perspective(400px) rotateX(10deg); }
+
+  100% { -webkit-transform: perspective(400px) rotateX(0deg); } }
+
+@-moz-keyframes flipInX {
+  0% { -moz-transform: perspective(400px) rotateX(90deg); }
+
+  30% { -moz-transform: perspective(400px) rotateX(-10deg); }
+
+  70% { -moz-transform: perspective(400px) rotateX(10deg); }
+
+  100% { -moz-transform: perspective(400px) rotateX(0deg); } }
+
+@-o-keyframes flipInX {
+  0% { -o-transform: perspective(400px) rotateX(90deg);
+       opacity: 0; }
+
+  30% { -o-transform: perspective(400px) rotateX(-10deg); }
+
+  70% { -o-transform: perspective(400px) rotateX(10deg); }
+
+  100% { -o-transform: perspective(400px) rotateX(0deg); } }
+
+@keyframes flipInX {
+  0% { transform: perspective(400px) rotateX(90deg);
+       opacity: 0; }
+
+  30% { transform: perspective(400px) rotateX(-10deg); }
+
+  70% { transform: perspective(400px) rotateX(10deg); }
+
+  100% { transform: perspective(400px) rotateX(0deg); } }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill: both;
+  -moz-animation-fill: both;
+  -ms-animation-fill: both;
+  -o-animation-fill: both;
+  animation-fill: both; }
+
+.flipInX {
+  -webkit-animation-name: flipInX;
+  -moz-animation-name: flipInX;
+  -ms-animation-name: flipInX;
+  -o-animation-name: flipInX;
+  animation-name: flipInX; }
+
+
+
+
+
+
+
+
+
+.sprite {
+  background: url("https://docs.google.com/uc?export=download&id=0B3VygIVAuRCQRzF1d0RyWHFFRU0") no-repeat;
+  background-size: 23px; }
+
+
+.content {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  padding: 15px 25px;
+  width: 510px;
+  border-width: 1px 4px 4px 3px;
+  border-style: solid;
+  border-color: #c8c7b4;
+  background-color: #ece5bd;
+
+
+
+  background-image: -linear-gradient(0deg, transparent 18px, #dbada9 0, #dbada9 20px, transparent 19px),
+                    -linear-gradient(#e1dab0 0.1em, transparent 0.1em);
+  background-image: -webkit-linear-gradient(0deg, transparent 11px, #dbada9 0, #dbada9 14px, transparent 12px),
+                    -webkit-linear-gradient(#e1dab0 0.1em, transparent 0.1em);
+  background-image: -moz-linear-gradient(0deg, transparent 11px, #dbada9 0, #dbada9 13px, transparent 12px),
+                    -moz-linear-gradient(#e1dab0 0.1em, transparent 0.1em);
+  background-size: 100% 10px;
+  color: #333;
+
+}
+
+
+
+.content:after, .content:before {
+  border-bottom: 23px solid transparent;
+  border-right: 20px solid #ece5bd;
+  top: 49px;
+  content: '';
+  position: absolute;
+  left: -9px;
+  -webkit-transform: rotate(220deg);
+  -moz-transform: rotate(220deg);
+  -o-transform: rotate(220deg);
+  transform: rotate(220deg); }
+
+.content h3 {
+  font: 23px "Satisfy";
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+  .content h4 {
+  font: 30px "Satisfy";
+  margin: 0;
+  padding: 0;
+  font-weight: bold; }
+
+.content p {
+    font: 23px "Satisfy";
+  margin: 10px 0 0 0;
+  font-size: 15px;
+  line-height: 1.7em; }
+
+.content p a {
+  text-decoration: none;
+  background-color: #f7f3c5;
+  border-bottom: solid 1px #cfcebe;
+  color: #834202;
+  padding: 1px 4px; }
+
+.content p a:hover { background-color: #f5ec82; }
+
+.content b {
+  display: block;
+  color: #75280c;
+  font: italic normal 17px Georgia; }
+
+.content:before {
+  top: 48px;
+  left: -11px;
+  border-right: 19px solid rgba(0, 0, 0, 0.1); }
+        
+        
+    </style>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/arbaoui_mehdi/pen/GbmeI?limit=all&page=3&q=comment" />
+    <link rel='stylesheet prefetch' href='//fonts.googleapis.com/css?family=Satisfy'>
+
+    
+</head>
+<body>
+    <h1 tyle="font-family:fantasy;">Detail page</h1>
+
+
+<hr>
+<div class="content">
+<h3>title    『 {{blog.title}} 』</h3>
+<p>{{likes}}good</p>
+<p>{{blog.pub_date}}</p>
+<p>{{blog.body}}</p>
+
+<a href="{%url 'edit' blog.id%}">수정하기</a>
+<a href="{%url 'delete' blog.id%}">삭제하기</a>
+<a href="{%url 'list'%}">list</a>
+<form action="/blog/like/{{blog.id}}" method = "get">
+    <button type = "submit" style="text-align: left" class="btn btn-danger btn-circle btn-sm"><i class="glyphicon glyphicon-heart"></i></button>
+</form>
+</div>
+
+
+<hr><hr><hr>
+
+<div class="content">
+    <form action="/blog/commenting/{{blog.id}}" method = "POST">
+        {%csrf_token%}
+        <input type="text" name='body'>
+        <button type = "submit" class="btn btn-sm red">작성</button>
+    </form>
+    {% for comment in comments %}
+    <h3>
+        {{comment.author}}
+        <b>{{comment.pub_date}}</b>
+    </h3>
+    <p>
+        {{comment.body}}
+    </p>
+    {% endfor %}
+</div>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
+
+    
+
+</body>
+</html>

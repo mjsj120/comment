@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Blog Project</h1>
+
+<a href="{%url 'new' %}">새글 작성하기</a>
+
+<div>
+    {% if user.is_authenticated %}
+        <h3>안녕하세요 {{user.username}}님</h3>
+    {% endif %}
+    <a href = "{% url 'login'%}">로그인</a>
+    <a href = "{% url 'logout'%}">로그아웃</a>
+    <a href = "{% url 'register'%}">회원가입</a>
+</div>
+
+
+
+{% for blog in blogs%}
+
+<hr>
+<a href="{%url 'detail' blog.id%}">
+{{blog.title}}
+<br>
+{{blog.pub_date}}
+<br>
+{{blog.summary}}
+<br>
+
+
+{% if blog.image %}
+    <img src="{{blog.image.url}}">
+{% endif %}
+</a>
+
+{% endfor %}
+</body>
+</html>
+
